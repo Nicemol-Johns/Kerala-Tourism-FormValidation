@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Meie+Script|Shadows+Into+Light|Arvo|Monda');
+*{
+    margin:0;
+    padding:0;
+}
+.sections{
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:100vh;
+    position:relative;
+}
+.sections h1{
+    position:absolute;
+    top:30%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background-color:azure;
+    color:#000;
+    padding:16px;
+    border-radius:8px;
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size:4vw;
+    mix-blend-mode:multiply;
+    box-shadow:0 0 16px #00000034,0 0 32px #000;
+    opacity:0.9;
+}
+.contents{
+    position:absolute;
+    top:45%;
+    left:20%;
+    right:20%;
+    background-color: #17151576;
+    padding:30px;
+    border-radius:10px;
+    color:rgba(236, 232, 232, 0.954);
+    font-size: 2vw;
+    font-family:'Meie Script',cursive;
+
+}
+.card{
+    border-radius:15px;
+    margin-right:10px;
+    height:500px;
+
+}
+.card-group{
+    /* background-image: url(../images/backgrounds_home//vishu-g439f9447b_1920.jpg); */
+    background-color: #050911;
+    padding:20px;
+}
+.card-body2 h5{
+    background-color: rgba(49, 56, 61, 0.614);
+    color:white;
+    font-size: 2vw;
+    font-weight:700;
+    text-align:center;
+    margin-top:0.5vh;
+    height:80px;
+}
+.card-img-top{
+    filter:grayscale(0);
+    transform: ease 0.2s;
+}
+.card-img-top:hover{
+    filter:grayscale(0.9);
+    transform: scale(1.2);
+}
+@media only screen and (max-width:990px){
+    .row .column{
+        flex:80%;
+    }
+}

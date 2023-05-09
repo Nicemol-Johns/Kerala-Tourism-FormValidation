@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Meie+Script|Shadows+Into+Light|Arvo|Monda');
+*{
+    margin:0;
+    padding:0;
+}
+.img-grid-bg{
+    /* background-image:url(../images/backgrounds_home//pexels-pixmike-413195.jpg); */
+    background: linear-gradient(0.25turn, #7bf3f3, #a5c58c, #bc8843);
+    background-size: cover;
+    background-position:center;
+}
+.navbar-nav{
+    margin-left: auto;
+    display:fixed;
+    overflow:hidden;
+}
+.nav-item:hover{
+    text-decoration: underline;
+    text-decoration-color: aliceblue;
+    text-underline-offset: 0.5em;
+}
+.row{
+    display:flex;
+    flex-wrap: wrap;
+    padding:2px;
+    position:relative;
+}
+.row .column{
+    flex:14%;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+.row .column img{
+    margin-top:5px;
+    margin-bottom:5px;
+    border-radius:5px;
+    filter:grayscale(1) brightness(0.5);
+    transition:0.1s ease-in-out;
+}
+#heading{
+    color:white;
+    position:absolute;
+    top:45%;
+    background-color:rgba(245, 245, 220, 0.47);
+    text-align:center;
+    font-family: cursive;
+    font-size:x-large;
+    visibility:visible;
+}
+.row .column img:hover {
+    filter:grayscale(0) brightness(1);
+    transform:scale(1.3);
+    border:2px solid green;
+}
+@media only screen and (max-width:990px){
+    .row .column{
+        flex:80%;
+    }
+}
+.aside-bar{
+    background: linear-gradient(0.25turn, #050911, #ebf8e1, #c6da80);
+}
+.inner-aside{
+    padding:50px;
+}
+.aside-content{
+    padding:50px;
+    border-radius:25px;
+    background-color: dimgray;
+}
+.aside-content h3{
+    color:rgb(215, 207, 118);
+    background-color: transparent;
+    text-align:center;
+    font-family:'Meie Script',cursive;
+    font-size:45px;
+    font-weight:700;
+}
+.card{
+    border-radius:15px;
+    margin-right:10px;
+    height:250px;
+
+}
+.card-group{
+    /* background-image: url(../images/backgrounds_home//vishu-g439f9447b_1920.jpg); */
+    background-color: #050911;
+    padding:20px;
+}
+.part-1,.part-2,.part-3{
+    background-position: center;
+    background-size: cover;    
+}
+.part-1{
+    background-image: url(../images/backgrounds_home/kerala-gfc45176a3_640.jpg);
+}
+.part-2{
+    background-image: url(../images/backgrounds_home//culture.jpg);
+}
+.part-3{
+    background-image: url(../images/backgrounds_home//sadhya.jpg);
+}
+.card-body h5{
+    background-color: rgba(49, 56, 61, 0.614);
+    color:white;
+    font-size: 2vw;
+    font-weight:900;
+    text-align:center;
+    margin-top:2em;
+    padding:10px 10px;
+    margin-left:50px;
+    margin-right:50px;
+}
+video{
+    margin-left: 50%;
+    transform: translate(-50%,0%);
+}
+@media only screen and (max-width: 720px) {
+    video {
+        display: none;
+    }
+ }
+.app-icon{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa.fa-linkedin-square{
+    font-size:5vh;
+    color:white;
+    padding:1vh;
+    border:1px solid white;
+    border-radius:5px;
+}
+.fa.fa-envelope{
+    font-size:5vh;
+    color:white;
+    margin-left:1vw;
+    padding:1vh;
+    border:1px solid white;
+    border-radius:5px;
+}
